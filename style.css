@@ -1,0 +1,389 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #0F172A;
+    color: white;
+}
+
+/* Navbar */
+.navbar {
+    position: fixed;
+    width: 100%;
+    padding: 20px 60px;
+    display: flex;
+    justify-content: space-between;
+    background: #0F172A;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+}
+
+.navbar ul li {
+    margin-left: 25px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Hero */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 120px 60px;
+}
+
+.hero-text h3 span {
+    color: #14B8A6;
+}
+
+.hero-text h1 {
+    font-size: 50px;
+}
+
+.hero-text h2 {
+    font-size: 35px;
+    color: #7C3AED;
+}
+
+.hero-text p {
+    margin: 20px 0;
+}
+
+/* Buttons */
+.btn {
+    padding: 10px 20px;
+    border-radius: 25px;
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+.primary {
+    background: #14B8A6;
+    color: white;
+}
+
+.outline {
+    border: 1px solid #14B8A6;
+    color: #14B8A6;
+}
+
+/* Image Section */
+.hero-image {
+    position: relative;
+}
+
+.hero-image img {
+    
+    width: 300px;
+    border-radius: 20px;
+    position: relative;
+    z-index: 2;
+}
+
+.circle {
+    position: absolute;
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    border: 6px solid #6a1a92;
+    top: -10px;
+    left: -10px;
+    z-index: 1;
+}
+
+/* Skills strip */
+.skills-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.skill-box {
+    background: linear-gradient(145deg, #1E293B, #0F172A);
+    padding: 25px;
+    width: 220px;
+    border-radius: 20px;
+    text-align: center;
+    transition: 0.4s;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+}
+
+.skill-box i {
+    font-size: 35px;
+    margin-bottom: 15px;
+    color: #14B8A6;
+}
+
+.skill-box:hover {
+    transform: translateY(-12px) scale(1.05);
+    box-shadow: 0 20px 40px rgba(124,58,237,0.4);
+}
+
+/* Sections */
+.section {
+    padding: 80px 60px;
+    text-align: center;
+}
+
+.stats {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 20px;
+}
+
+/* Cards */
+.cards {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.card {
+    background: #1E293B;
+    padding: 20px;
+    border-radius: 15px;
+    width: 250px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.portfolio-layout {
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+    padding: 80px 60px;
+}
+
+/* Left side */
+.left {
+    flex: 1;
+}
+
+/* Right side */
+.right {
+    flex: 2;
+}
+
+/* Achievements style */
+.achievements {
+    list-style: none;
+    padding-left: 0;
+}
+
+.about-box {
+    transition: 0.4s;
+}
+
+.about-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 50px rgba(124,58,237,0.4);
+}
+.about-section {
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.about-box {
+    max-width: 700px;
+    margin: auto;
+    background: linear-gradient(145deg, #1E293B, #0F172A);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+}
+
+.about-stats {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.about-stats h3 {
+    color: #14B8A6;
+}
+
+/* Timeline container */
+
+.timeline {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* centers everything */
+    gap: 20px;
+}
+
+.timeline-item {
+    width: 60%;   /* reduce width */
+    max-width: 600px;
+    position: relative;
+}
+.content {
+
+    width: 100%;
+    text-align: center;
+
+    background: #1E293B;
+    padding: 15px 20px;
+    border-radius: 12px;
+    text-align: left;
+    transition: 0.3s;
+}
+
+
+/* Hover effect */
+.content:hover {
+    transform: translateX(8px);
+    box-shadow: 0 10px 25px rgba(124,58,237,0.4);
+}
+.cards {
+    display: flex;
+    gap: 20px;
+}
+
+.card {
+    background: linear-gradient(145deg, #1E293B, #0F172A);
+    padding: 25px;
+    border-radius: 20px;
+    width: 250px;
+    transition: 0.4s;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+}
+
+.card:hover {
+    transform: translateY(-12px) scale(1.03);
+    box-shadow: 0 20px 40px rgba(124,58,237,0.4);
+}
+
+.card a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #7C3AED;
+    text-decoration: none;
+}
+
+.contact-section {
+    padding: 100px 60px;
+    text-align: center;
+}
+
+.contact-container {
+    display: flex;
+    gap: 50px;
+    margin-top: 40px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Left Side */
+.contact-info {
+    background: linear-gradient(145deg, #1E293B, #0F172A);
+    padding: 30px;
+    border-radius: 20px;
+    width: 400px;
+    text-align: left;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+}
+
+.contact-info i {
+    margin-right: 10px;
+    color: #14B8A6;
+}
+
+/* Right Side Form */
+.contact-form {
+    background: linear-gradient(145deg, #1E293B, #0F172A);
+    padding: 30px;
+    border-radius: 20px;
+    width: 400px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    margin: 10px 0;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    background: #0F172A;
+    color: white;
+}
+
+.contact-form textarea {
+    height: 100px;
+    resize: none;
+}
+
+/* Button Hover */
+.contact-form button:hover {
+    background: #7C3AED;
+}
+.contact-info i {
+    transition: 0.3s;
+}
+.contact-form button {
+    transition: 0.3s;
+}
+
+.contact-form button:hover {
+    background: linear-gradient(45deg, #14B8A6, #7C3AED);
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(20,184,166,0.5);
+}
+.contact-form button {
+    transition: 0.3s;
+}
+
+.contact-form button:hover {
+    background: linear-gradient(45deg, #14B8A6, #7C3AED);
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(20,184,166,0.5);
+}
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border: 1px solid #7C3AED;
+    box-shadow: 0 0 10px #7C3AED;
+}
+.contact-info,
+.contact-form {
+    transition: 0.4s;
+    position: relative;
+}
+
+.contact-info:hover,
+.contact-form:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 50px rgba(124,58,237,0.5);
+}
+.contact-info p:hover i {
+    color: #7C3AED;
+    transform: scale(1.2);
+}
+
+
+.contact-info:hover::before,
+.contact-form:hover::before {
+    opacity: 1;
+}
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #020617;
+}
