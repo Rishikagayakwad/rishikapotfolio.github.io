@@ -58,6 +58,81 @@ body {
 .hero-text p {
     margin: 20px 0;
 }
+@media (max-width: 768px) {
+
+    /* HERO SECTION FIX */
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 100px 20px;
+    }
+
+    .hero-text {
+        width: 100%;
+    }
+
+    .hero-text h1 {
+        font-size: 35px;
+    }
+
+    .hero-text h2 {
+        font-size: 24px;
+    }
+
+    .hero-text p {
+        font-size: 14px;
+    }
+
+    /* IMAGE FIX */
+    .hero-image {
+        margin-top: 30px;
+    }
+
+    .hero-image img {
+        width: 220px;
+        height: 220px;
+        border-radius: 50%;
+    }
+
+    /* BUTTON FIX */
+    .buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+
+    /* NAVBAR FIX */
+    .navbar {
+        padding: 15px 20px;
+    }
+
+    .navbar ul {
+        display: none; /* hide menu for now */
+    }
+
+    /* SKILLS FIX */
+    .skills-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* PROJECT CARDS */
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+    }
+
+    /* CONTACT FIX */
+    .contact-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
 
 /* Buttons */
 .btn {
@@ -65,10 +140,6 @@ body {
     border-radius: 25px;
     margin-right: 10px;
     text-decoration: none;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    align-items: center;
     
 }
 
