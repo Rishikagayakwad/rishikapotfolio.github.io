@@ -178,7 +178,23 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+}.hero-image img {
+    
+    width: 300px;
+    border-radius: 20px;
+    position: relative;
+    z-index: 2;
 }
+
+.circle {
+    position: absolute;
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    border: 6px solid #6a1a92;
+    top: -10px;
+    left: -10px;
+    z-index: 1;
 
 
 /* Skills strip */
